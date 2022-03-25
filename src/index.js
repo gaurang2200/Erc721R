@@ -8,7 +8,7 @@ const theme = createTheme({
   typography: {
     allVariants: {
       fontFamily: 'Poppins',
-      color: 'white'
+      color: 'white',
     },
   },
 });

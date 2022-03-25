@@ -1,4 +1,48 @@
 .App {
-  height: 100vh;
-  background-color: black;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgb(7, 7, 7);
+}
+
+.btn {
+  --r:40px; /* radius */
+  --b:2px; /* border width */
+  
+  background: linear-gradient(90deg, #FF75C3 0%, #FFA647 59.31%, #F3DF48 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:0;
+}
+
+.btn::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius: var(--r);
+  border: var(--b) solid transparent;
+  border-radius: var(--r);
+  background: inherit;
+  background-origin:border-box;
+  background-clip:border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite:destination-out;
+  mask-composite: exclude;
+}
+
+.btn:hover {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
 }

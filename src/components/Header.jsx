@@ -26,6 +26,7 @@ const Header = () => {
         >
           <Typography
             variant="button"
+            fontWeight={600}
             sx={{ background: "black", borderRadius: "2em", p: "0.5em 1em" }}
           >
             Connect <span style={{color: 'red'}}>&#8226;</span>
