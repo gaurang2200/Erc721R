@@ -1,10 +1,16 @@
 .App {
+  position: relative;
+  z-index: -100;
+  background-color: black;
   min-height: 100vh;
   height: 100%;
-  background-color: rgb(7, 7, 7);
+  min-width: 100vw;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
-.btn {
+
+.getStartedBtn {
   --r:40px; /* radius */
   --b:2px; /* border width */
   
@@ -21,14 +27,12 @@
   z-index:0;
 }
 
-.btn::before {
+.getStartedBtn::before {
   content:"";
   position:absolute;
   z-index:-1;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  width: 10em;
+  padding: 1.5em 2em;
   border-radius: var(--r);
   border: var(--b) solid transparent;
   border-radius: var(--r);
@@ -42,7 +46,7 @@
   mask-composite: exclude;
 }
 
-.btn:hover {
+.getStartedBtn:hover {
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
