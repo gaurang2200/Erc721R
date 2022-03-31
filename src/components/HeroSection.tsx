@@ -7,9 +7,9 @@ const HeroSection = () => {
   return (
     <>
       <div className="relative flex flex-col items-center justify-center mx-4 md:mx-12 lg:mx-20 pb-8 overflow-hidden">
-        <img src={heroBg} className="absolute h-full w-full -z-10" />
-        <img src={gradientBg} className="absolute h-full w-full -z-10" />
-        <img src={heroImage} className="-z-10"/>
+        <img src={heroBg} className="absolute h-full w-full" />
+        <img src={gradientBg} className="absolute h-full w-full" />
+        <img src={heroImage}/>
         <div className="z-10 text-white flex flex-col items-center">
           <p className="text-6xl opacity-100 text-center font-bold mt-12 mb-4">
             ERC721R
