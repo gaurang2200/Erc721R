@@ -14,16 +14,16 @@ function StepsCard({
   buttonText: string;
 }) {
   return (
-    <div className="w-full flex" style={{ justifyContent: alignment }}>
-      <div className="relative w-2/5" style={{ height: "25em" }}>
+    <div className="w-full flex px-5 my-5" style={{ justifyContent: alignment }}>
+      <div className="relative w-full h-full md:w-2/5">
         <img
           src={StepBg}
-          style={{ position: "absolute", top: "-60%", [alignment]: "-10%" }}
+          className="-top-1/4"
+          style={{ position: "absolute", [alignment]: "-10%" }}
         />
         <div className="absolute top-0" style={{ [alignment]: "5%" }}>
           <p
-            className="font-semibold opacity-10 text-white"
-            style={{ fontSize: "10em" }}
+            className="font-semibold opacity-10 text-white text-[9rem]"
           >
             {id}
           </p>
@@ -32,7 +32,7 @@ function StepsCard({
           className="flex flex-col relative top-1/4 text-white"
           style={{
             alignItems: alignment === "left" ? "flex-start" : "flex-end",
-            [alignment]: "16%",
+            // [alignment]: "16%",
           }}
         >
           <p
