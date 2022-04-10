@@ -4,7 +4,7 @@ import StepsCard from "./StepsCard";
 const Steps = () => {
     return (
         <>
-            <div className="lg:px-12 max-w-full ">
+            <div className="lg:px-12 max-w-full relative overflow-hidden">
                 <StepsCard
                     id="01"
                     alignment="left"
